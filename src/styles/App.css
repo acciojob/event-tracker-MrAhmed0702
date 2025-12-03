@@ -1,1 +1,37 @@
+/* src/styles/App.css */
+.app {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
 
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.popup-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.popup-footer button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #ddd;
+}
