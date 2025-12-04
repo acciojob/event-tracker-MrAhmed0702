@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.calendar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* React Big Calendar Overrides */
+.rbc-calendar {
+  font-size: 14px;
+}
+
+.rbc-event {
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.rbc-event.rbc-selected {
+  background-color: inherit;
+}
+
+.rbc-toolbar {
+  margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.rbc-toolbar button:hover {
+  background: #f5f5f5;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-form {
+  padding: 20px;
+}
+
+.event-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.event-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-buttons > div {
+  display: flex;
+  gap: 10px;
+}
+
+.mm-popup__btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.mm-popup__btn:hover {
+  opacity: 0.8;
+}
+
+.mm-popup__btn--danger {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.mm-popup__btn--danger:hover {
+  opacity: 0.8;
+}
+
+.mm-popup__box__footer__right-space {
+  background: #28a745;
+}

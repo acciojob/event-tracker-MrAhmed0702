@@ -1,19 +1,14 @@
 import React from "react";
 
-const FilterButtons = ({ setFilter }) => {
+function FilterButtons({ setFilter }) {
   return (
     <div className="filter-buttons">
-      <button className="btn" onClick={() => setFilter("all")}>
-        All
-      </button>
-      <button className="btn" onClick={() => setFilter("past")}>
-        Past
-      </button>
-      <button className="btn" onClick={() => setFilter("upcoming")}>
-        Upcoming
-      </button>
+      <button onClick={() => setFilter(null)}>All</button>
+      <button onClick={() => setFilter("work")}>Work</button>
+      <button onClick={() => setFilter("personal")}>Personal</button>
+      <button onClick={() => setFilter("other")}>Other</button>
     </div>
   );
-};
+}
 
 export default FilterButtons;
